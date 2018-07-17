@@ -1,0 +1,188 @@
+* {
+  margin: 0px;
+}
+
+html {
+  font-family: trebuchet ms;
+}
+
+nav {
+  border: hidden;
+  background-color: #D9D9D9;
+  border-radius: 0px 0px 0px 55px;
+  width: 100%;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.nav-item {
+  width: auto;
+  height:auto;
+  float: left;
+  padding:10px;
+  color: #424242;
+}
+
+.nav-item:hover:not(.active) {
+  background-color: #424242;
+  text-decoration: none;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+
+.nav-item:hover {
+  color: #424242;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+  vertical-align: middle;
+}
+
+.imglogo {
+  width: 80px;
+  height: auto;
+  background-size: contain;
+  text-align: left;
+  border-radius: 50%;
+  margin: 10px;
+  float:left;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'header header header header header'
+  'left left middle middle right right'
+  'footer footer footer footer footer footer';
+  grid-column-gap: 10px;
+}
+
+  /* Slideshow Stuff */
+.slideshow {
+  width: 100%;
+  height: 690px;
+  text-align: center;
+  background-color: #D9D9D9;
+  display: inline-block;
+  border-radius: 15px;
+  position: static;
+
+}
+
+.slides {
+  max-width: 95%;
+  max-height: 480px;
+  position: relative;
+  margin: auto;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.artistdata {
+  vertical-align: top;
+}
+
+.artistDetails {
+  margin-top: 10px;
+}
+
+.slideimg {
+  max-width: 100%;
+  max-height: 480px;
+  box-sizing: border-box;
+  position: relative;
+  vertical-align: middle;
+  border-radius: 15px;
+  margin: auto;
+  z-index: 2;
+}
+
+.w3-container {
+  display: block;
+  height: 20px;
+  width: 60px;
+  padding: 5px;
+  vertical-align: bottom;
+  position: relative;
+}
+
+.w3-button {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+  margin-top: 120px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 2px solid #424242;
+  vertical-align: bottom;
+}
+
+.w3-button:active {
+  outline: none;
+}
+
+.w3-button:hover {
+  background-color: #424242;
+}
+
+
+
+  /* Updates Stuff */
+#footer {
+    align-content: center;
+    width: 100%;
+}
+
+.updates {
+  max-width: 400px;
+  height: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  margin: 2%;
+  background-color: #D9D9D9;
+  display: inline-block;
+  border-radius: 15px;
+  position: static;
+  overflow: auto;
+  vertical-align: top;
+}
+
+#updatesHeader {
+  margin-left: 10px;
+}
+
+.updated {
+  display: flex;
+  flex-direction: row;
+}
+
+.updatesimg {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 5px;
+  vertical-align: middle;
+}
+
+.moreupdates {
+  font-size: 10px;
+  background-color: white;
+  border-radius: 10px;
+  width: 90%;
+  margin: 2%;
+  text-align: center;
+}
+
+.texupd {
+  vertical-align: middle;
+}

@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Circular Home - Digital Gallery</title>
+<link rel="stylesheet" type="text/css" href="circularIndexStyling.css">
+<link rel="icon" href="headerImages/CircularEditF.jpg" type="image/jpeg" sizes="16x16">
+        <!-- bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<!-- Header Bar -->
+<div class="row">
+  <nav id ="custom-bootstrap-menu" class="navbar navbar-expand-md navbar-dark bg-dark mb-4 nav-fill ">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <img class="imglogo" src="headerImages/CircularEditF.jpg">
+      <ul class="navbar-nav mr-auto flex-col nav-collapse" data-toggle="collapse"  data-target=".navbar-collapse">
+
+        <li class="nav-item ">
+              <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item ">
+            <a class="nav-link"  href="artistsCircular.html">Artists</a>
+        </li>
+
+        <li class="nav-item ">
+            <a class="nav-link"  href="galleryCircular.html">Gallery</a>
+        </li>
+
+        <li class="nav-item ">
+            <a class="nav-link" href="aboutCircular.html">About</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<div id="allhome">
+            <!-- S L I D E S H O W -->
+            <div class="slideshow">
+              <h6><br> Welcome</h6>
+                <div class="slides">
+                        <div class="slide">
+                            <img class="slideimg" src="artImages/johannes5.jpg"><img>
+                          <div class="artistDetails">
+                                <h5 class="artistdata artistname">Hexalayer</h5>
+                                <p class= "artistdata artinfo">Digital Photography<br>30cm x 40cm</p>
+                                <p class= "artistdata artinfo">Johannes Mueller-Welschof</p>
+                          </div>
+                        </div>
+                        <div class="slide">
+                            <img class="slideimg" src="artImages/steph2.jpg">
+
+                          <div class="artistDetails">
+                                <h5 class="artistdata artistname">Possum</h5>
+                                <p class= "artistdata artinfo">Acrylic on Plywood<br>50cm x 50cm</p>
+                                <p class= "artistdata artinfo">Stephanie Cheer</p>
+                          </div>
+                        </div>
+                        <div class="slide">
+                            <img class="slideimg" src="artImages/wayne6.jpg">
+
+                          <div class="artistDetails">
+                                <h5 class="artistdata artistname">Unnamed</h5>
+                                <p class= "artistdata artinfo">Info Here</p>
+                                <p class= "artistdata artinfo">Wayne Churcher</p>
+                          </div>
+                        </div>
+                    </div>
+
+        			      <div class="w3container">
+                      <button class="w3-button demo" onclick="currentDiv(1)">
+                      <button class="w3-button demo" onclick="currentDiv(2)">
+                      <button class="w3-button demo" onclick="currentDiv(3)">
+                    </div>
+                </div>
+
+
+
+						<!-- S L I D E S H O W   S C R I P T -->
+                  <script>
+                      var slideIndex = 1;
+                      showDivs(slideIndex);
+
+                      function plusDivs(n) {
+                        showDivs(slideIndex += n);
+                      }
+
+                      function currentDiv(n) {
+                        showDivs(slideIndex = n);
+                      }
+
+                      function showDivs(n) {
+                        var i;
+                        var x = document.getElementsByClassName("slide");
+                        var dots = document.getElementsByClassName("demo");
+                        if (n > x.length) {slideIndex = 1}
+                        if (n < 1) {slideIndex = x.length}
+                        for (i = 0; i < x.length; i++) {
+                           x[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                           dots[i].className = dots[i].className.replace(" w3-red", "");
+                        }
+                        x[slideIndex-1].style.display = "block";
+                        dots[slideIndex-1].className += " w3-red";
+                      }
+                  </script>
+
+                  <!-- U P D A T E S -->
+          <div id="footer">
+            <div class="updates">
+              <table>
+                  <tr>
+                      <td><h4 id="updatesHeader">Updates</h4></td>
+                  </tr>
+                          <table>
+                            <tr class="updated">
+                                <td>
+                                    <div class="imgupd">
+                                        <img class="updatesimg" src="artistImages/churcherWayne.jpg">
+                                    </div>
+                                </td>
+                                <td class="texupd">
+                                    <p class="updatetext"> New artist: Wayne Churcher <br>Come check out their art! <hr></p>
+                                </td>
+                            </tr>
+                            <tr class="updated">
+                                <td>
+                                    <div class="imgupd">
+                                        <img class="updatesimg" src="artistImages/muellerWelschofJohannes.jpg">
+                                    </div>
+                                </td>
+                                <td class="texupd">
+                                    <p class="updatetext"> New artist: Johannes Mueller-Welschof <br>Come check out their art! <hr></p>
+                                </td>
+                            </tr>
+                            <tr class="updated">
+                                <td>
+                                    <div class="imgupd">
+                                        <img class="updatesimg" src="artistImages/cheerStephanie.jpg">
+                                    </div>
+                                </td>
+                                <td class="texupd">
+                                    <p class="updatetext"> New artist: Stephanie Cheer <br>Come check out their art! <hr></p>
+                                </td>
+                            </tr>
+                            <tr class="updated">
+                                <td>
+                                    <div class="imgupd">
+                                        <img class="updatesimg" src="artistImages/gabrielKathy.jpg">
+                                    </div>
+                                </td>
+                                <td class="texupd">
+                                    <p class="updatetext"> New artist: Kathy Gabriel <br>Come check out their art! <hr></p>
+                                </td>
+                            </tr>
+                              <tr class="updated">
+                                  <td>
+                                      <div class="imgupd">
+                                          <img class="updatesimg" src="artistImages/vickyArty.jpg">
+                                      </div>
+                                  </td>
+                                  <td class="texupd">
+                                      <p class="updatetext"> New artist: Arty Vicky <br>Come check out their art! <hr></p>
+                                  </td>
+                              </tr>
+                              <tr class="updated">
+                                  <td>
+                                      <div class="imgupd">
+                                          <img class="updatesimg" src="updatesImages/updatesimg.jpg">
+                                      </div>
+                                  </td>
+                                  <td class="texupd">
+                                      <p class="updatetext">Website updated: o/b 2.0 </p>
+                                  </td>
+                              </tr>
+                          </table>
+                      <tr>
+                          <td>
+                              <p class="moreupdates"> More updates later! <br> Stay tuned!</p>
+                          </td>
+                      </tr>
+              </table>
+            </div>
+          </div>
+</div>
+<p style="text-align: center; width: auto; vertical-align: bottom; font-size: 10px; position: static; display: block;">Circular webpage designed and created by Jarod Churcher<br> Copyright: Circular&copy;<br> Please contact artists if you wish to use media.</p>
+</body>
+</html>
